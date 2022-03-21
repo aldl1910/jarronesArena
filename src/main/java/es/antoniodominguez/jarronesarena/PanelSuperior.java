@@ -25,17 +25,10 @@ public class PanelSuperior extends HBox {
         
         botonReinicio.setOnAction(event -> {
             tablero.elimiarTablero();
-//            logica.reiniciarPartida();
             tablero.reinicioTablero();
             logica.finPartida= false;
             contador = tiempo;
             temporizador(logica);
-            
-           // tablero.iniciarTablero();
-           // tablero.elimiarTablero();
-            
-            //tablero.cambiarColor(jarron, 0, 0);
-            
         });
         this.setSpacing(10);
         
